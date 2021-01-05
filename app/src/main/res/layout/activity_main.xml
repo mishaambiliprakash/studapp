@@ -1,43 +1,65 @@
-<LinearLayout android:layout_height="match_parent"
+<ScrollView android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:background="#00aabb"
-    android:orientation="vertical"
+    android:background="@drawable/gradient"
+
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView
-        android:text="Student Name"
+    <LinearLayout android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:text="Admission No"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:text="Roll No"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:text="College Name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <Button
-        android:text="SUBMIT"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <EditText
+            android:id="@+id/sname"
+            android:drawableLeft="@drawable/name"
+            android:drawablePadding="10dp"
+            android:layout_margin="10dp"
+            android:hint="Student Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/admn"
+            android:drawableLeft="@drawable/admnno"
+            android:drawablePadding="10dp"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:hint="Admission No"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/roll"
+            android:drawableLeft="@drawable/admnno"
+            android:drawablePadding="10dp"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:hint="Roll No"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/college"
+            android:drawableLeft="@drawable/college"
+            android:drawablePadding="10dp"
+            android:layout_margin="10dp"
+            android:hint="College Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:onClick="mybtnclick"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_margin="10dp"
+            android:background="@drawable/button"
+            android:text="REGISTER"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
 
 
 
 
 
-</LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
